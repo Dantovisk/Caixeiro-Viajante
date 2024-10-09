@@ -103,7 +103,13 @@ ITEM *lista_remover(LISTA *lista, int pos){
 ITEM *lista_item(LISTA *lista, int chave) {
     if(lista != NULL) {
         int i = lista_busca(lista, chave);
-        if(i >= lista->fim || chave != item_get_chave(lista->itens[i])) return NULL;
+
+        //caso de lista_busca retornar o fim da lista (item nao existe)
+        if(i >= lista->fim) return NULL;
+
+        //caso de a chave ser diferente da esperada, não esta na lista
+        if(chave != item_get_chave(lista->itens[i])) return NULL;
+        
         return (lista->itens[i]);
     }
     return NULL;
