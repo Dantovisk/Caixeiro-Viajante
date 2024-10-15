@@ -61,6 +61,7 @@ A **complexidade dominante da solução** é O(n! log n), sendo ineficaz para um
 ### Gráficos
 
 Os gráficos demonstram o crescimento exponencial do tempo de execução à medida que o número de cidades aumenta, evidenciando a inviabilidade da abordagem de força bruta para um número maior de cidades.
+[Descrição da imagem](graficos/fb.png)
 
 ### Conclusão
 
