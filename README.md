@@ -85,4 +85,4 @@ Esta seção aborda o algoritmo Held-Karp, utilizando programação dinâmica e 
 - **Espaço**: O(n^2 * 2^n) para armazenar a matriz `dp` e os caminhos em `deque`.
 
 O algoritmo Held-Karp é mais eficiente que a abordagem de força bruta, mas o consumo de memória pode se tornar impraticável para um número elevado de cidades.
-
+![hk](graficos/hk.png) ![hklog](graficos/hklog.png) ![fbhk](graficos/fbhk.png) ![fbhklog](graficos/fbhklog.png)
